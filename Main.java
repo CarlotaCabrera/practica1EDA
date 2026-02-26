@@ -23,7 +23,7 @@ public class ListImpl <E> implements List<E> {
         this.size = 0;
     }
     @Override
-    public int size() { return this.size; } [cite: 36]
+    public int size() { return this.size; } 
 }
 
 private class CIterator implements Iterator<E>{
