@@ -1,6 +1,9 @@
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Stack;
 import java.util.NoSuchElementException;
+import java.util.Queue;
+
 
 public class BST<E extends Comparable<E>> implements Iterable<E> {
     private Node<E> root;
@@ -76,4 +79,47 @@ public class BST<E extends Comparable<E>> implements Iterable<E> {
             return n.data;
         }
     }
+
+public void preOrden() { preOrden(root); System.out.println(); }
+private void preOrden(Node<E> n) {
+    if (n != null) { System.out.print(n.data + " "); preOrden(n.left); preOrden(n.right); }
+}
+
+public void inOrden() { inOrden(root); System.out.println(); }
+private void inOrden(Node<E> n) {
+    if (n != null) { inOrden(n.left); System.out.print(n.data + " "); inOrden(n.right); }
+}
+
+public void postOrden() { postOrden(root); System.out.println(); }
+private void postOrden(Node<E> n) {
+    if (n != null) { postOrden(n.left); postOrden(n.right); System.out.print(n.data + " "); }
+}
+
+public void recorridoAnchura() {
+    if (root == null) return;
+    Queue<Node<E>> cola = new LinkedList<>();
+    cola.add(root);
+    while (!cola.isEmpty()) {
+        Node<E> actual = cola.poll();
+        System.out.print(actual.data + " ");
+        if (actual.left != null) cola.add(actual.left);
+        if (actual.right != null) cola.add(actual.right);
+    }
+    System.out.println();
+}
+
+public void mayoresQue(E elemento) {
+    mayoresQueRec(root, elemento);
+    System.out.println();
+}
+private void mayoresQueRec(Node<E> n, E elemento) {
+    if (n == null) return;
+    if (n.data.compareTo(elemento) > 0) {
+        mayoresQueRec(n.left, elemento);
+        System.out.print(n.data + " ");
+        mayoresQueRec(n.right, elemento);
+    } else {
+        mayoresQueRec(n.right, elemento);
+    }
+}
 }
