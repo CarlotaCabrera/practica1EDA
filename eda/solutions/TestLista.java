@@ -1,3 +1,7 @@
+package eda.solutions;
+import eda.adt.*;
+import eda.ds.*;
+import eda.exceptions.*;
 public class TestLista {
     public static void main(String[] args) throws WrongIndexException {
         ListImpl<Integer> lista = new ListImpl<>();

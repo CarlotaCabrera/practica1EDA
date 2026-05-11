@@ -1,3 +1,6 @@
+package eda.ds;
+import eda.adt.*;
+import eda.exceptions.*;
 public class QueueImplArray<E> implements Queue<E> {
     private Object[] data;
     private int head;

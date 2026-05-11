@@ -1,3 +1,6 @@
+package eda.ds;
+import eda.adt.*;
+import eda.exceptions.*;
 import java.util.*;
 
 public class GrafoMatriz<T> {

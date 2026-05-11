@@ -1,3 +1,6 @@
+package eda.ds;
+import eda.adt.*;
+import eda.exceptions.*;
 public class AVL<E extends Comparable<E>> extends BST<E> {
     private class AVLNode {
         E data;

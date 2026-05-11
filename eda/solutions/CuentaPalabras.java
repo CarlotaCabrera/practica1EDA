@@ -1,3 +1,7 @@
+package eda.solutions;
+import eda.adt.*;
+import eda.ds.*;
+import eda.exceptions.*;
 import java.io.*;
 import java.util.*;
 

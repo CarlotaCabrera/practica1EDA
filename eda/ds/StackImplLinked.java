@@ -1,3 +1,6 @@
+package eda.ds;
+import eda.adt.*;
+import eda.exceptions.*;
 public class StackImplLinked<E> implements Stack<E> {
     private Node<E> top;
     private int size;

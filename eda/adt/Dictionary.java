@@ -1,3 +1,5 @@
+package eda.adt;
+import eda.exceptions.*;
 import java.util.Iterator;
 
 public interface Dictionary<K, V> extends Iterable<K> {

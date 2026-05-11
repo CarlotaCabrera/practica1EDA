@@ -1,3 +1,6 @@
+package eda.ds;
+import eda.adt.*;
+import eda.exceptions.*;
 import java.util.Iterator;
 
 public class HashTable<K, V> implements Dictionary<K, V> {

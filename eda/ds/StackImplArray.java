@@ -1,3 +1,6 @@
+package eda.ds;
+import eda.adt.*;
+import eda.exceptions.*;
 public class StackImplArray<E> implements Stack<E> {
     private Object[] data;
     private int size;

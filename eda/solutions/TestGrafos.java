@@ -1,3 +1,7 @@
+package eda.solutions;
+import eda.adt.*;
+import eda.ds.*;
+import eda.exceptions.*;
 public class TestGrafos {
     public static void main(String[] args) {
         GrafoLista<String> g = new GrafoLista<>(10);

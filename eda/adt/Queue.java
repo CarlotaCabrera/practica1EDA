@@ -1,3 +1,5 @@
+package eda.adt;
+import eda.exceptions.*;
 public interface Queue<E> {
     void enqueue(E data);
     E dequeue() throws WrongIndexException;

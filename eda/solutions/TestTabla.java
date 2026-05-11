@@ -1,3 +1,7 @@
+package eda.solutions;
+import eda.adt.*;
+import eda.ds.*;
+import eda.exceptions.*;
 public class TestTabla {
     public static void main(String[] args) {
         HashTable<String, Integer> tabla = new HashTable<>();

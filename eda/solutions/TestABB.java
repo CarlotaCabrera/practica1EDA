@@ -1,3 +1,7 @@
+package eda.solutions;
+import eda.adt.*;
+import eda.ds.*;
+import eda.exceptions.*;
 public class TestABB {
     public static void main(String[] args) {
         BST<Integer> arbol = new BST<>();
