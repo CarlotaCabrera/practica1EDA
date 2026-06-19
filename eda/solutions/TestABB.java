@@ -23,7 +23,7 @@ public class TestABB {
         System.out.print("Anchura (Niveles): ");
         arbol.recorridoAnchura();
 
-        System.out.println("\n--- PRUEBA mayoresQue(50) ---");
+        System.out.println("\n--- prueba mayoresQue(50) ---");
         System.out.print("Nodos mayores que 50: ");
         arbol.mayoresQue(50);
     }

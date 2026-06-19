@@ -42,8 +42,7 @@ public class GrafoMatriz<T> {
         Integer j = nodos.get(destino);
         if (i != null && j != null) matriz[i][j] = peso;
     }
-
-    // BFS (Anchura)
+    
     public void BFS(T inicio) {
         Integer idx = nodos.get(inicio);
         if (idx == null) return;
